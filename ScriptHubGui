@@ -8,7 +8,7 @@ local Main = Instance.new("Frame")
 local MainBackground = Instance.new("Frame")
 local SideButtonPanel = Instance.new("Frame")
 local Center = Instance.new("Frame")
-local Home = Instance.new("TextButton")
+local NemosScripts = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local ScriptHub = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
@@ -17,12 +17,15 @@ local UICorner_3 = Instance.new("UICorner")
 local PageHolder = Instance.new("Frame")
 local ScriptHub_2 = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local Home_2 = Instance.new("Frame")
+local Home = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
+local Scripts = Instance.new("Frame")
+local Other_2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
 local Title = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
-local TextButton = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
 
 --Properties:
 
@@ -58,18 +61,18 @@ Center.ClipsDescendants = true
 Center.Position = UDim2.new(0.0538461544, 0, 0.029296875, 0)
 Center.Size = UDim2.new(0, 115, 0, 299)
 
-Home.Name = "Home"
-Home.Parent = Center
-Home.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
-Home.Position = UDim2.new(0.00167224184, 0, -0.00553929806, 0)
-Home.Size = UDim2.new(0, 115, 0, 30)
-Home.Font = Enum.Font.SourceSans
-Home.TextColor3 = Color3.fromRGB(0, 0, 0)
-Home.TextScaled = true
-Home.TextSize = 14.000
-Home.TextWrapped = true
+NemosScripts.Name = "Nemo's Scripts"
+NemosScripts.Parent = Center
+NemosScripts.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+NemosScripts.Position = UDim2.new(0.00167224184, 0, -0.00553929806, 0)
+NemosScripts.Size = UDim2.new(0, 115, 0, 30)
+NemosScripts.Font = Enum.Font.SourceSans
+NemosScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+NemosScripts.TextScaled = true
+NemosScripts.TextSize = 14.000
+NemosScripts.TextWrapped = true
 
-UICorner.Parent = Home
+UICorner.Parent = NemosScripts
 
 ScriptHub.Name = "Script Hub"
 ScriptHub.Parent = Center
@@ -113,13 +116,29 @@ ScriptHub_2.Visible = false
 
 UICorner_4.Parent = ScriptHub_2
 
-Home_2.Name = "Home"
-Home_2.Parent = PageHolder
-Home_2.BackgroundColor3 = Color3.fromRGB(108, 0, 1)
-Home_2.Position = UDim2.new(-0.000420749187, 0, -0.00541666523, 0)
-Home_2.Size = UDim2.new(0, 347, 0, 300)
+Home.Name = "Home"
+Home.Parent = PageHolder
+Home.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Home.Position = UDim2.new(-0.000420749187, 0, -0.00541666523, 0)
+Home.Size = UDim2.new(0, 347, 0, 300)
 
-UICorner_5.Parent = Home_2
+UICorner_5.Parent = Home
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Home
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0.0028818443, 0, 0.0533333346, 0)
+Scripts.Size = UDim2.new(0, 346, 0, 264)
+
+Other_2.Name = "Other"
+Other_2.Parent = PageHolder
+Other_2.BackgroundColor3 = Color3.fromRGB(12, 0, 108)
+Other_2.Position = UDim2.new(-0.000420749187, 0, -0.00208333507, 0)
+Other_2.Size = UDim2.new(0, 347, 0, 300)
+Other_2.Visible = false
+
+UICorner_6.Parent = Other_2
 
 Title.Name = "Title"
 Title.Parent = Main
@@ -142,23 +161,24 @@ TextLabel.TextWrapped = true
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Parent = TextLabel
 
-TextButton.Parent = Title
-TextButton.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.938000023, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 30, 0, 20)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "-"
-TextButton.TextColor3 = Color3.fromRGB(255, 85, 0)
-TextButton.TextSize = 30.000
-TextButton.TextWrapped = true
+Minimize.Name = "Minimize"
+Minimize.Parent = Title
+Minimize.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.939999998, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 30, 0, 20)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 85, 0)
+Minimize.TextSize = 30.000
+Minimize.TextWrapped = true
 
 -- Scripts:
 
-local function CABAV_fake_script() -- Center.TweeTwee 
+local function ZGJDIY_fake_script() -- Center.TweeTwee 
 	local script = Instance.new('LocalScript', Center)
 
-	local ButtonOne = script.Parent["Home"]
+	local ButtonOne = script.Parent["Nemo's Scripts"]
 	local ButtonTwo = script.Parent["Script Hub"]
 	local ButtonThree = script.Parent["Other"]
 	---
@@ -178,30 +198,94 @@ local function CABAV_fake_script() -- Center.TweeTwee
 	
 	---
 end
-coroutine.wrap(CABAV_fake_script)()
--- Home.ClickBttnScript is disabled.
--- ScriptHub.ClickBttnScript is disabled.
--- Other.ClickBttnScript is disabled.
-local function IKLQPSF_fake_script() -- Main.Draggable 
+coroutine.wrap(ZGJDIY_fake_script)()
+local function SUZLKA_fake_script() -- NemosScripts.ClickBttnScript 
+	local script = Instance.new('LocalScript', NemosScripts)
+
+	--SetText
+	script.Parent.Text = script.Parent.Name
+	--Locals
+	local MainPageHolder = script.Parent.Parent.Parent.Parent.PageHolder
+	local HomePage = MainPageHolder.Home
+	local ScriptHPage = MainPageHolder.ScriptHub
+	local OtherPage = MainPageHolder.Other
+	--Function
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		HomePage.Visible = true
+		ScriptHPage.Visible = false
+		OtherPage.Visible = false
+	end)
+end
+coroutine.wrap(SUZLKA_fake_script)()
+local function XUNX_fake_script() -- ScriptHub.ClickBttnScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	--SetText
+	script.Parent.Text = script.Parent.Name
+	--Locals
+	local MainPageHolder = script.Parent.Parent.Parent.Parent.PageHolder
+	local HomePage = MainPageHolder.Home
+	local ScriptHPage = MainPageHolder.ScriptHub
+	local OtherPage = MainPageHolder.Other
+	--Function
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		HomePage.Visible = false
+		ScriptHPage.Visible = true
+		OtherPage.Visible = false
+	end)
+end
+coroutine.wrap(XUNX_fake_script)()
+local function KSGRGU_fake_script() -- Other.ClickBttnScript 
+	local script = Instance.new('LocalScript', Other)
+
+	--SetText
+	script.Parent.Text = script.Parent.Name
+	--Locals
+	local MainPageHolder = script.Parent.Parent.Parent.Parent.PageHolder
+	local HomePage = MainPageHolder.Home
+	local ScriptHPage = MainPageHolder.ScriptHub
+	local OtherPage = MainPageHolder.Other
+	--Function
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		HomePage.Visible = false
+		ScriptHPage.Visible = false
+		OtherPage.Visible = true
+	end)
+end
+coroutine.wrap(KSGRGU_fake_script)()
+local function KQGHUW_fake_script() -- Home.GlobalSetter 
+	local script = Instance.new('LocalScript', Home)
+
+	_G.HomeScriptsFrame = script.Parent.Scripts
+end
+coroutine.wrap(KQGHUW_fake_script)()
+local function OFBMLIA_fake_script() -- Main.Draggable 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")local gui = script.Parent local dragging local dragInput local dragStart local startPos local function update(input)local delta = input.Position - dragStart gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)end gui.InputBegan:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = true dragStart = input.Position startPos = gui.Position input.Changed:Connect(function()if input.UserInputState == Enum.UserInputState.End then dragging = false end end)end end)gui.InputChanged:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then dragInput = input end end)UserInputService.InputChanged:Connect(function(input)if input == dragInput and dragging then update(input)end end)
 end
-coroutine.wrap(IKLQPSF_fake_script)()
-local function BRXX_fake_script() -- Title.TweeTwee 
+coroutine.wrap(OFBMLIA_fake_script)()
+local function HZUQBCY_fake_script() -- Title.TweeTwee 
 	local script = Instance.new('LocalScript', Title)
 
 	local TitleText = script.Parent.TextLabel
-	
+	local MinimizeButton = script.Parent.Minimize
+	--
 	TitleText.Position = (UDim2.new(-1, 0,0, 0))
+	MinimizeButton.Position = (UDim2.new(2, 0,0, 0))
 	--
 	wait(.4)
 	TitleText:TweenPosition(UDim2.new(0, 0,0, 0))
+	wait(.2)
+	MinimizeButton:TweenPosition(UDim2.new(0.94, 0, 0, 0))
 	
 end
-coroutine.wrap(BRXX_fake_script)()
-local function OFRAV_fake_script() -- TextButton.BttnScript 
-	local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(HZUQBCY_fake_script)()
+local function XNMI_fake_script() -- Minimize.BttnScript 
+	local script = Instance.new('LocalScript', Minimize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.Parent.MainBackground.Size == UDim2.new(0, 500,0, 320) then
@@ -213,4 +297,4 @@ local function OFRAV_fake_script() -- TextButton.BttnScript
 		end
 	end)
 end
-coroutine.wrap(OFRAV_fake_script)()
+coroutine.wrap(XNMI_fake_script)()
