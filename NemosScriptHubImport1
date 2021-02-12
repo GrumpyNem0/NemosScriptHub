@@ -1,0 +1,288 @@
+local ScriptsSet = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local ScriptOne = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local ScriptTwo = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ScriptThree = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ScriptFour = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ScriptFive = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ScriptSix = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ScriptSeven = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+ScriptsSet.Name = "ScriptsSet"
+ScriptsSet.Parent = _G.HomeScriptsFrame
+ScriptsSet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsSet.BackgroundTransparency = 1.000
+ScriptsSet.Size = UDim2.new(0, 346, 0, 264)
+UIListLayout.Parent = ScriptsSet
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+ScriptOne.Name = "ScriptOne"
+ScriptOne.Parent = ScriptsSet
+ScriptOne.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptOne.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptOne.Size = UDim2.new(0, 315, 0, 35)
+ScriptOne.Font = Enum.Font.Cartoon
+ScriptOne.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptOne.TextScaled = true
+ScriptOne.TextSize = 14.000
+ScriptOne.TextWrapped = true
+UICorner.Parent = ScriptOne
+ScriptTwo.Name = "ScriptTwo"
+ScriptTwo.Parent = ScriptsSet
+ScriptTwo.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptTwo.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptTwo.Size = UDim2.new(0, 315, 0, 35)
+ScriptTwo.Font = Enum.Font.Cartoon
+ScriptTwo.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptTwo.TextScaled = true
+ScriptTwo.TextSize = 14.000
+ScriptTwo.TextWrapped = true
+UICorner_2.Parent = ScriptTwo
+ScriptThree.Name = "ScriptThree"
+ScriptThree.Parent = ScriptsSet
+ScriptThree.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptThree.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptThree.Size = UDim2.new(0, 315, 0, 35)
+ScriptThree.Font = Enum.Font.Cartoon
+ScriptThree.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptThree.TextScaled = true
+ScriptThree.TextSize = 14.000
+ScriptThree.TextWrapped = true
+UICorner_3.Parent = ScriptThree
+
+ScriptFour.Name = "ScriptFour"
+ScriptFour.Parent = ScriptsSet
+ScriptFour.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptFour.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptFour.Size = UDim2.new(0, 315, 0, 35)
+ScriptFour.Font = Enum.Font.Cartoon
+ScriptFour.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptFour.TextScaled = true
+ScriptFour.TextSize = 14.000
+ScriptFour.TextWrapped = true
+
+UICorner_4.Parent = ScriptFour
+
+ScriptFive.Name = "ScriptFive"
+ScriptFive.Parent = ScriptsSet
+ScriptFive.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptFive.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptFive.Size = UDim2.new(0, 315, 0, 35)
+ScriptFive.Font = Enum.Font.Cartoon
+ScriptFive.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptFive.TextScaled = true
+ScriptFive.TextSize = 14.000
+ScriptFive.TextWrapped = true
+
+UICorner_5.Parent = ScriptFive
+
+ScriptSix.Name = "ScriptSix"
+ScriptSix.Parent = ScriptsSet
+ScriptSix.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptSix.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptSix.Size = UDim2.new(0, 315, 0, 35)
+ScriptSix.Font = Enum.Font.Cartoon
+ScriptSix.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptSix.TextScaled = true
+ScriptSix.TextSize = 14.000
+ScriptSix.TextWrapped = true
+
+UICorner_6.Parent = ScriptSix
+
+ScriptSeven.Name = "ScriptSeven"
+ScriptSeven.Parent = ScriptsSet
+ScriptSeven.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ScriptSeven.Position = UDim2.new(0.154286951, 0, -0.00333322329, 0)
+ScriptSeven.Size = UDim2.new(0, 315, 0, 35)
+ScriptSeven.Font = Enum.Font.Cartoon
+ScriptSeven.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptSeven.TextScaled = true
+ScriptSeven.TextSize = 14.000
+ScriptSeven.TextWrapped = true
+
+UICorner_7.Parent = ScriptSeven
+
+-- Scripts:
+
+local function IRQEOWP_fake_script() -- ScriptOne.LocalScript 
+	local script = Instance.new('LocalScript', ScriptOne)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("DEADZONE MULTITOOL | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = false
+	local DisableReason = ("Reason.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(IRQEOWP_fake_script)()
+local function FIDICZ_fake_script() -- ScriptTwo.LocalScript 
+	local script = Instance.new('LocalScript', ScriptTwo)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("Script".." | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = true
+	local DisableReason = ("Script not complete.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(FIDICZ_fake_script)()
+local function KYVLFE_fake_script() -- ScriptThree.LocalScript 
+	local script = Instance.new('LocalScript', ScriptThree)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("Script".." | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = true
+	local DisableReason = ("Script not complete.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(KYVLFE_fake_script)()
+local function AGCTVTP_fake_script() -- ScriptFour.LocalScript 
+	local script = Instance.new('LocalScript', ScriptFour)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("Script".." | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = true
+	local DisableReason = ("Script not complete.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(AGCTVTP_fake_script)()
+local function PSMVNE_fake_script() -- ScriptFive.LocalScript 
+	local script = Instance.new('LocalScript', ScriptFive)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("Script".." | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = true
+	local DisableReason = ("Script not complete.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(PSMVNE_fake_script)()
+local function WGNTTU_fake_script() -- ScriptSix.LocalScript 
+	local script = Instance.new('LocalScript', ScriptSix)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("Script".." | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = true
+	local DisableReason = ("Script not complete.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(WGNTTU_fake_script)()
+local function PHSRU_fake_script() -- ScriptSeven.LocalScript 
+	local script = Instance.new('LocalScript', ScriptSeven)
+
+	local CreditPeople = "Grumpy Nemo"
+	local ScriptName = ("Script".." | Credits: "..CreditPeople)
+	local Scripty = function()
+		---Script here
+		
+		---
+	end
+	local Disabled = true
+	local DisableReason = ("Script not complete.")
+	---
+	script.Parent.Text=ScriptName
+	---
+	if Disabled == true then
+		print(ScriptName.." is Disabled. | Reason:"..DisableReason)
+		script.Parent.Visible=false
+	else
+	script.Parent.MouseButton1Click:Connect(function()
+			Scripty()
+		end)
+	end
+end
+coroutine.wrap(PHSRU_fake_script)()
