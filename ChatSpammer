@@ -1,0 +1,123 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local NemosChatSpammer = Instance.new("ScreenGui")
+local TopBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local Close = Instance.new("TextButton")
+local Backgroundone = Instance.new("Frame")
+local Backgroundtwo = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ChatINPUT = Instance.new("TextBox")
+local SpamButton = Instance.new("TextButton")
+
+--Properties:
+
+NemosChatSpammer.Name = "NemosChatSpammer"
+NemosChatSpammer.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NemosChatSpammer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TopBar.Name = "TopBar"
+TopBar.Parent = NemosChatSpammer
+TopBar.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(0.758673847, 0, 0.204918027, 0)
+TopBar.Size = UDim2.new(0, 200, 0, 20)
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 180, 0, 20)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Nemo's Chat Spammer"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = Title
+
+Close.Name = "Close"
+Close.Parent = TopBar
+Close.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.899999976, 0, 0, 0)
+Close.Size = UDim2.new(0, 20, 0, 19)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "-"
+Close.TextColor3 = Color3.fromRGB(255, 85, 0)
+Close.TextSize = 30.000
+
+Backgroundone.Name = "Backgroundone"
+Backgroundone.Parent = TopBar
+Backgroundone.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Backgroundone.BorderSizePixel = 0
+Backgroundone.Position = UDim2.new(0, 0, 1, 0)
+Backgroundone.Size = UDim2.new(0, 200, 0, 230)
+
+Backgroundtwo.Name = "Backgroundtwo"
+Backgroundtwo.Parent = Backgroundone
+Backgroundtwo.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Backgroundtwo.Position = UDim2.new(0.0500000007, 0, 0.0304347817, 0)
+Backgroundtwo.Size = UDim2.new(0, 180, 0, 216)
+
+UICorner.Parent = Backgroundtwo
+
+ChatINPUT.Name = "ChatINPUT"
+ChatINPUT.Parent = TopBar
+ChatINPUT.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+ChatINPUT.BorderSizePixel = 0
+ChatINPUT.Position = UDim2.new(0.125, 0, 2.21475077, 0)
+ChatINPUT.Size = UDim2.new(0, 150, 0, 150)
+ChatINPUT.Font = Enum.Font.SourceSans
+ChatINPUT.PlaceholderText = "Text Here"
+ChatINPUT.Text = ""
+ChatINPUT.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChatINPUT.TextSize = 14.000
+ChatINPUT.TextXAlignment = Enum.TextXAlignment.Left
+ChatINPUT.TextYAlignment = Enum.TextYAlignment.Top
+
+SpamButton.Name = "SpamButton"
+SpamButton.Parent = TopBar
+SpamButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+SpamButton.BorderSizePixel = 0
+SpamButton.Position = UDim2.new(0.125, 0, 10, 0)
+SpamButton.Size = UDim2.new(0, 150, 0, 30)
+SpamButton.Font = Enum.Font.SourceSans
+SpamButton.Text = "Spam Text"
+SpamButton.TextColor3 = Color3.fromRGB(179, 179, 179)
+SpamButton.TextScaled = true
+SpamButton.TextSize = 14.000
+SpamButton.TextWrapped = true
+
+-- Scripts:
+
+local function HFDX_fake_script() -- Close.Close 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()script.Parent.Parent.Parent:Destroy()end)
+end
+coroutine.wrap(HFDX_fake_script)()
+local function RXES_fake_script() -- SpamButton.LocalScript 
+	local script = Instance.new('LocalScript', SpamButton)
+
+	local ChatSpam = function(input)
+		_G.ChatSpamONOFF = true
+		while _G.ChatSpamONOFF == true do
+		local args = {[1] = input,[2] = "All"}
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		--
+		ChatSpam(script.Parent.Parent.ChatINPUT.Text)
+		--
+	end)
+end
+coroutine.wrap(RXES_fake_script)()
