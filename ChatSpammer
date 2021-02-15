@@ -3,7 +3,6 @@
 
 -- Instances:
 
-local NemosChatSpammer = Instance.new("ScreenGui")
 local TopBar = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
@@ -16,15 +15,11 @@ local SpamButton = Instance.new("TextButton")
 
 --Properties:
 
-NemosChatSpammer.Name = "NemosChatSpammer"
-NemosChatSpammer.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-NemosChatSpammer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 TopBar.Name = "TopBar"
-TopBar.Parent = NemosChatSpammer
+TopBar.Parent = game.Players.LocalPlayer.StarterGui:WaitForChild("NemoHub").Main
 TopBar.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 TopBar.BorderSizePixel = 0
-TopBar.Position = UDim2.new(0.758673847, 0, 0.204918027, 0)
+TopBar.Position = UDim2.new(1.04667377, 0, -0.0450819731, 0)
 TopBar.Size = UDim2.new(0, 200, 0, 20)
 
 Title.Name = "Title"
@@ -98,13 +93,13 @@ SpamButton.TextWrapped = true
 
 -- Scripts:
 
-local function HFDX_fake_script() -- Close.Close 
+local function JFSAJP_fake_script() -- Close.Close 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()script.Parent.Parent.Parent:Destroy()end)
 end
-coroutine.wrap(HFDX_fake_script)()
-local function RXES_fake_script() -- SpamButton.LocalScript 
+coroutine.wrap(JFSAJP_fake_script)()
+local function KLHZWQ_fake_script() -- SpamButton.LocalScript 
 	local script = Instance.new('LocalScript', SpamButton)
 
 	local ChatSpam = function(input)
@@ -120,4 +115,4 @@ local function RXES_fake_script() -- SpamButton.LocalScript
 		--
 	end)
 end
-coroutine.wrap(RXES_fake_script)()
+coroutine.wrap(KLHZWQ_fake_script)()
